@@ -1,19 +1,46 @@
-let button = document.querySelector("#clickerButton");
-let text = document.querySelector("#myValue");
+let buttonClick = document.getElementById("clickerButton");
+let appearingElement = document.getElementById("twoMore");
+let buttonPlusTwo = document.getElementById("addTwo");
+let costInfo = document.getElementById("costInfo");
+let addValue = 1;
 let value = 1;
+let cost = 5;
+let count = 0;
 
-function increaseNumber(){
-		text.innerText = value;
-		if(value < 10){
-			value++;
-		}
-		else if(value >=10 && value <=100){
-			value+=5;
-		}
-    else{
-			text.innerText = "You Win!";
-		}
-
+function click() {
+  
+  buttonClick.innerText = value;
+  value+=addValue; 
+  
+  if(appearingElement.classList.contains("nonVisible") && value == 10) {
+    appearingElement.classList.remove("nonVisible");
+    appearingElement.classList.toggle("visible");
+  } 
 }
 
-clickerButton.addEventListener("click", increaseNumber);
+function valueTwoMore() {
+  
+  if(value > cost){
+    
+   value-=cost;
+    
+   if(cost <= 6) {
+    addValue+=1;
+    }
+    
+   else { 
+    addValue+=2;
+   }
+    
+   buttonClick.innerText = value;
+   cost+=10;
+   costInfo.innerText = "It's cost " + cost;
+    
+  }
+}
+
+ buttonPlusTwo.addEventListener("click", valueTwoMore);
+ buttonClick.addEventListener("click", click);
+
+
+
