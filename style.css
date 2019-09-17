@@ -2,38 +2,40 @@ body {
   margin: 0;
   padding: 0;
   font-size: 62.5%;
-}
-
-.container { 
-  width: 800px;
-  height: 500px;
-  background: #377896;
-  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.container { 
+  width: 1000px;
+  height: 700px;
+  background: #377896;
+  margin: auto;
+}
+
 .logo {
-	margin-top: -10px;
 	font-family: VT323;
   text-align: center;
   font-size: 3.5rem; 
   line-height: 1.2rem;
   color: #F2E6E1;
 }
-.on{
-  font-size: 2.5rem;
-  line-height: 1rem;
-  color: #B6B0BD;
-}
 
-.unicornStyle {
+.unicornStyleButton {
   width: 5rem;
 	height: 5rem;
 	border-radius: 100%;
 	background: pink;
+}
+
+.displayAddedValue {
+
+}
+
+.containerCoin { 
+
 }
 
 .cost {
@@ -46,18 +48,17 @@ body {
 	margin: 0 5px;
 }
 
-.addingValue { 
-	font-size: 1rem;
-}
+
+/* general style */
 
 .nonVisible {
   display: none;
 }
 
-.appearingElement{
-	text-align: center;
-	display: flex;
-  flex-direction: row;
+
+.flexLayout {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

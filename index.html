@@ -1,31 +1,34 @@
 <DOCTYPE html>
 <html>
   <head>
-
+  	<link rel="stylesheet" href="style.css"/>
   </head>
   <body>
 
-<div class="container">
+<div class="container flexLayout">
 
-  <h1 class="logo">Click<br><span class="on">on</span><br>Unicorn!</h1>
-  <button id="clickerButton" class="unicornStyle">Click Me</button>
-   <p id="addValue" class="addingValue">You adding 1 now</p>
+  <h1 class="logo">Click<br>on<br>Unicorn!</h1> <!-- To będzie dodany obrazek potem -->
+  <button id="addingToValueButton" class="unicornButtonStyle">Click Me!</button> <!-- To będzie dodany obrazek potem -->
+  <p id="displayAddedValue" class="displayAddedValue">You adding 1 now</p>
   
-	<div class="appearingElement">
-		<div class="nonVisible" id="twoMore">
-		 <p id="costInfo" class="cost">It's cost 5</p>
-		 <button id="addTwo" class="addingButton">Add 2 to your value</button>
+	<div class="containerCoin  flexLayout"> <!-- To będzie dodany obrazek potem -->
+
+		<div class="nonVisible" id="coin2">
+			 <p id="costInfo2" class="cost">It's cost 5</p>
+			 <button id="addTwo" class="addingButton">Add 2 to your value</button>
 		</div>
 
-		<div class="nonVisible" id="fiveMore">
-			<p id="costInfoFive" class="cost">It's cost 10</p>
+		<div class="nonVisible" id="coin5">
+			<p id="costInfo5" class="cost">It's cost 10</p>
 			<button id="addFive" class="addingButton">Add 5 to your value</button>
 		</div>
+
 	</div>
+	
 </div>
 
 
 
-    <script src="ClickScript.js"></script>
+    <script src="ClickScript"></script>
   </body>
 </html>

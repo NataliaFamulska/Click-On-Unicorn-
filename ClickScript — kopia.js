@@ -18,15 +18,6 @@ const coin2 = document.getElementById("coin2");
 const coin5 = document.getElementById("coin5");
 
 // functions
-function incrementValue() { 
-    baddingToValueButton.innerText = value;
-    value+=addValue; 
-    displayValue.innerText = "You adding " + addValue;
-
-    chceckDisplayClass(coin2);
-    chceckDisplayClass(coin5);
-}
-
 function chceckDisplayClass(coin) {
     if(coin.classList.contains("nonVisible") && value > 10) {
         coin.classList.remove("nonVisible");
@@ -38,6 +29,15 @@ function increaseAddingValue(numerToAdd, cout){
     value-=cost;
     addValue+=numerToAdd;
     cout ++;
+}
+
+function incrementValue() { 
+    addingToValueButton.innerText = value;
+    value+=addValue; 
+    displayValue.innerText = "You adding " + addValue;
+
+    chceckDisplayClass(coin2);
+    chceckDisplayClass(coin5);
 }
 
 // events
