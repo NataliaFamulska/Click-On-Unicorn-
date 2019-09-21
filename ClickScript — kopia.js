@@ -6,9 +6,8 @@ const addFive = document.getElementById("addFive");
 //number
 let vaule = 1;
 let addToValue = 1;
-let cost;
 
-// displayed text
+// text
 let displayAddedValue = document.getElementById("displayAddedValue");
 let infoAboutCostButton2 = document.getElementById("costInfo2");
 let infoAboutCostButton5 = document.getElementById("costInfo5");
@@ -42,4 +41,4 @@ function incrementValue() {
 
 // events
 addingToValueButton.addEventListener("click", incrementValue());
-addTwo.addEventListener("click", increaseAddingValue(2));
+addTwo.addEventListener("click", increaseAddingValue(2, 5));

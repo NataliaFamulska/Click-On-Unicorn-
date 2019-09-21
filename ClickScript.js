@@ -8,7 +8,7 @@ let vaule = 1;
 let addToValue = 1;
 let cost;
 
-// displayed text
+//  text
 let displayAddedValue = document.getElementById("displayAddedValue");
 let infoAboutCostButton2 = document.getElementById("costInfo2");
 let infoAboutCostButton5 = document.getElementById("costInfo5");
