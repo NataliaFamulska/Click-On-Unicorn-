@@ -41,4 +41,4 @@ function incrementValue() {
 
 // events
 addingToValueButton.addEventListener("click", incrementValue());
-addTwo.addEventListener("click", increaseAddingValue(2, 5));
+addTwo.addEventListener("click", increaseAddingValue(2));
